@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Digital Downloads - Continue Shopping\n"
+"POT-Creation-Date: 2015-07-07 16:00-0600\n"
+"PO-Revision-Date: 2015-07-07 16:01-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class.edd-continue-shopping-activation.php:45
+msgid "Easy Digital Downloads - Continue Shopping"
+msgstr ""
+
+#: includes/class.edd-continue-shopping-activation.php:80
+msgid "activate it"
+msgstr ""
+
+#: includes/class.edd-continue-shopping-activation.php:83
+msgid "install it"
+msgstr ""
+
+#: includes/class.edd-continue-shopping-activation.php:85
+#, php-format
+msgid " requires Easy Digital Downloads! Please %s to continue!"
+msgstr ""
+
+#: includes/functions.php:24
+msgid "Continue Shopping"
+msgstr ""
+
+#: includes/settings.php:12
+msgid "Continue Shopping Settings"
+msgstr ""
+
+#: includes/settings.php:13
+msgid "Configure Continue Shopping Settings"
+msgstr ""
+
+#: includes/settings.php:18
+msgid "Disable Continue Shopping"
+msgstr ""
+
+#: includes/settings.php:19
+msgid "Disable the Continue Shopping link."
+msgstr ""
+
+#: includes/settings.php:25
+msgid "Continue Shopping URL"
+msgstr ""
+
+#: includes/settings.php:26
+msgid ""
+"This is the page you want to send customers to when they click the Continue "
+"Shopping link. If left blank, your default product archives will be used."
+msgstr ""
+
+#: includes/settings.php:29
+msgid "Select a page"
+msgstr ""
