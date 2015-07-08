@@ -5,7 +5,7 @@
  * @package     EDD\Continue Shopping\Settings
  * @since       1.0.0
  */
-function edd_continue_shopping_settings( $settings ) {
+function eddcs_continue_shopping_settings( $settings ) {
 	$continue_shopping_settings = array(
 		array(
 			'id'   => 'edd_continue_shopping_settings',
@@ -31,4 +31,4 @@ function edd_continue_shopping_settings( $settings ) {
 	);
 	return array_merge( $settings, $continue_shopping_settings );
 }
-add_filter( 'edd_settings_extensions', 'edd_continue_shopping_settings', 999, 1 );
+add_filter( 'edd_settings_extensions', 'eddcs_continue_shopping_settings', 999, 1 );
