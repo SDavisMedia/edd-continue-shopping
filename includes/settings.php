@@ -28,6 +28,24 @@ function eddcs_continue_shopping_settings( $settings ) {
 			'options'     => edd_get_pages(),
 			'placeholder' => __( 'Select a page', 'edd-continue-shopping' )
 		),
+		array(
+			'id'   => 'edd_continue_shopping_text',
+			'name' => __( 'Continue Shopping Button Text', 'edd-continue-shopping' ),
+			'desc' => __( 'This text will show on the Continue Shopping link. If left blank, \'Continue Shopping\' will display.', 'edd-continue-shopping' ),
+			'type' => 'text',
+			'size' => 'regular',
+			'std'  => __( 'Continue Shopping', 'edd-continue-shopping' ),
+		),
+		array(
+			'id'          => 'edd_continue_shopping_link_type',
+			'name'        => __( 'Continue Shopping Link Type', 'edd-continue-shopping' ),
+			'desc'        => __( 'Should the link inherit EDD\'s button styles or display as a text link?', 'edd-continue-shopping' ),
+			'type'        => 'select',
+			'options'     => array(
+				'button'  => __( 'Button Link', 'edd-continue-shopping' ),
+				'text'    => __( 'Text Link', 'edd-continue-shopping' ),
+			),
+		),
 	);
 	return array_merge( $settings, $continue_shopping_settings );
 }

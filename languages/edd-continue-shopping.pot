@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Digital Downloads - Continue Shopping\n"
-"POT-Creation-Date: 2015-07-07 16:00-0600\n"
-"PO-Revision-Date: 2015-07-07 16:01-0600\n"
+"POT-Creation-Date: 2015-07-11 23:50-0600\n"
+"PO-Revision-Date: 2015-07-11 23:51-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -35,7 +35,7 @@ msgstr ""
 msgid " requires Easy Digital Downloads! Please %s to continue!"
 msgstr ""
 
-#: includes/functions.php:24
+#: includes/functions.php:26 includes/settings.php:37
 msgid "Continue Shopping"
 msgstr ""
 
@@ -67,4 +67,30 @@ msgstr ""
 
 #: includes/settings.php:29
 msgid "Select a page"
+msgstr ""
+
+#: includes/settings.php:33
+msgid "Continue Shopping Button Text"
+msgstr ""
+
+#: includes/settings.php:34
+msgid ""
+"This text will show on the Continue Shopping link. If left blank, 'Continue "
+"Shopping' will display."
+msgstr ""
+
+#: includes/settings.php:41
+msgid "Continue Shopping Link Type"
+msgstr ""
+
+#: includes/settings.php:42
+msgid "Should the link inherit EDD's button styles or display as a text link?"
+msgstr ""
+
+#: includes/settings.php:45
+msgid "Button Link"
+msgstr ""
+
+#: includes/settings.php:46
+msgid "Text Link"
 msgstr ""

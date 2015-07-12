@@ -17,11 +17,13 @@ if( !defined( 'ABSPATH' ) ) exit;
  */
 function eddcs_continue_shopping_link() {
 	if ( class_exists( 'Easy_Digital_Downloads' ) && !edd_get_option( 'edd_continue_shopping' ) ) {
-		$store_link = edd_get_option( 'edd_continue_shopping_page' );
-		$color = edd_get_option( 'checkout_color', 'blue' );
-		$color = ( $color == 'inherit' ) ? '' : $color;
+		$store_link        = edd_get_option( 'edd_continue_shopping_page' );
+		$cs_text           = edd_get_option( 'edd_continue_shopping_text' );
+		$cs_link_type      = edd_get_option( 'edd_continue_shopping_link_type' );
+		$color             = edd_get_option( 'checkout_color', 'blue' );
+		$color             = ( $color == 'inherit' ) ? '' : $color;
 		?>
-		<a href="<?php echo $store_link ? get_permalink( $store_link ) : home_url( '/' . lcfirst( edd_get_label_plural() ) ); ?>" class="edd-continue-shopping-button edd-submit button<?php echo ' ' . $color; ?>" style="text-decoration: none;"><?php _e( 'Continue Shopping', 'edd-continue-shopping' ); ?></a>
+		<a href="<?php echo $store_link ? get_permalink( $store_link ) : home_url( '/' . lcfirst( edd_get_label_plural() ) ); ?>" class="edd-continue-shopping-button <?php echo 'button' == $cs_link_type ? 'edd-submit button ' . $color : ''; ?>" style="<?php echo 'button' == $cs_link_type ? 'text-decoration: none;' : 'font-size: inherit; font-weight: 400; margin-right: 4px;'; ?>"><?php if ( false === $cs_text ) { _e( 'Continue Shopping', 'edd-continue-shopping' ); } elseif ( !empty( $cs_text ) ) { echo $cs_text; } ?></a>
 		<?php
 	}
 }
