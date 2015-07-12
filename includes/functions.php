@@ -23,7 +23,7 @@ function eddcs_continue_shopping_link() {
 		$color             = edd_get_option( 'checkout_color', 'blue' );
 		$color             = ( $color == 'inherit' ) ? '' : $color;
 		?>
-		<a href="<?php echo $store_link ? get_permalink( $store_link ) : home_url( '/' . lcfirst( edd_get_label_plural() ) ); ?>" class="edd-continue-shopping-button <?php echo 'button' == $cs_link_type ? 'edd-submit button ' . $color : ''; ?>" style="<?php echo 'button' == $cs_link_type ? 'text-decoration: none;' : 'font-size: inherit; font-weight: 400; margin-right: 4px;'; ?>"><?php if ( false === $cs_text ) { _e( 'Continue Shopping', 'edd-continue-shopping' ); } elseif ( !empty( $cs_text ) ) { echo $cs_text; } ?></a>
+		<a href="<?php echo $store_link ? get_permalink( $store_link ) : home_url( '/' . lcfirst( edd_get_label_plural() ) ); ?>" class="edd-continue-shopping-button <?php echo 'text' == $cs_link_type ? '' : 'edd-submit button ' . $color; ?>" style="<?php echo 'text' == $cs_link_type ? 'font-size: inherit; font-weight: 400; margin-right: 4px;' : 'text-decoration: none;'; ?>"><?php if ( false === $cs_text ) { _e( 'Continue Shopping', 'edd-continue-shopping' ); } elseif ( !empty( $cs_text ) ) { echo $cs_text; } ?></a>
 		<?php
 	}
 }
