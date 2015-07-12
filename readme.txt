@@ -31,5 +31,9 @@ Follow EDD Continue Shopping’s development on [Github](https://github.com/sdav
 
 == Changelog ==
 
+= 1.0.1 =
+* Add setting to control Continue Shopping link text
+* Add setting to swap between button link and text link
+
 = 1.0.0 =
 * First stable release
