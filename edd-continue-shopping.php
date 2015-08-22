@@ -92,11 +92,6 @@ if( !class_exists( 'EDD_Continue_Shopping' ) ) {
 		 * @return      void
 		 */
 		private function hooks() {
-
-			// Handle licensing
-			if( class_exists( 'EDD_License' ) ) {
-			    $license = new EDD_License( __FILE__, 'Easy Digital Downloads - Continue Shopping', EDD_CONTINUE_SHOPPING_VER, 'Sean Davis' );
-			}
 		}
 
 		/**
