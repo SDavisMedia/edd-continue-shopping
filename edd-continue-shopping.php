@@ -3,7 +3,7 @@
  * Plugin Name: Easy Digital Downloads - Continue Shopping
  * Plugin URI: https://wordpress.org/plugins/easy-digital-downloads-continue-shopping/
  * Description: Adds a Continue Shopping link to the Easy Digital Downloads checkout cart.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Sean Davis
  * Author URI: http://sdavismedia.com
  * Text Domain: edd-continue-shopping
@@ -59,7 +59,7 @@ if( !class_exists( 'EDD_Continue_Shopping' ) ) {
 		private function setup_constants() {
 
 			// Plugin version
-			define( 'EDD_CONTINUE_SHOPPING_VER', '1.0.2' );
+			define( 'EDD_CONTINUE_SHOPPING_VER', '1.0.3' );
 
 			// Plugin path
 			define( 'EDD_CONTINUE_SHOPPING_DIR', plugin_dir_path( __FILE__ ) );
@@ -74,7 +74,7 @@ if( !class_exists( 'EDD_Continue_Shopping' ) ) {
 		 * @access      private
 		 * @since       1.0.0
 		 * @return      void
-		 */ 
+		 */
 		private function includes() {
 
 			// Include functions

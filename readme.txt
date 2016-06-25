@@ -3,8 +3,8 @@ Contributors: sdavis2702
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=52HQDSEUA542S
 Tags: easy digital downloads, edd, shopping cart, checkout, ecommerce
 Requires at least: 3.9.2
-Tested up to: 4.3
-Stable tag: 1.0.1
+Tested up to: 4.6
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +21,7 @@ Follow EDD Continue Shopping’s development on [Github](https://github.com/sdav
 1. Make sure you have [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/) installed.
 2. Upload `edd-continue-shopping` to the `/wp-content/plugins/` directory.
 3. Activate the plugin through the 'Plugins' menu in WordPress.
-4. Navigate to Downloads -> Settings -> Extensions (tab) in your WordPress dashboard and find the "Continue Shopping Settings" section.
+4. Navigate to Downloads -> Settings -> Extensions (tab) -> Continue Shopping (section) in your WordPress dashboard.
 5. Adjust your settings and save. You can see the output by viewing your EDD checkout page while you have items in the cart.
 
 == Screenshots ==
@@ -30,6 +30,9 @@ Follow EDD Continue Shopping’s development on [Github](https://github.com/sdav
 2. Cart Output
 
 == Changelog ==
+
+= 1.0.3 =
+* update EDD settings with dedicated subsection
 
 = 1.0.2 =
 * Remove EDD licensing code
