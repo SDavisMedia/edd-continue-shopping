@@ -1,5 +1,17 @@
 <?php
 /**
+* Register Continue Shopping settings section
+*
+* @return array
+*/
+function eddcs_continue_shopping_settings_section( $sections ) {
+	$sections['eddcs-settings'] = __( 'Continue Shopping', 'edd-continue-shopping' );
+	return $sections;
+}
+add_filter( 'edd_settings_sections_extensions', 'eddcs_continue_shopping_settings_section' );
+
+
+/**
  * Settings
  *
  * @package     EDD\Continue Shopping\Settings
@@ -47,6 +59,9 @@ function eddcs_continue_shopping_settings( $settings ) {
 			),
 		),
 	);
+	if ( version_compare( EDD_VERSION, 2.5, '>=' ) ) {
+		$continue_shopping_settings = array( 'eddcs-settings' => $continue_shopping_settings );
+	}
 	return array_merge( $settings, $continue_shopping_settings );
 }
 add_filter( 'edd_settings_extensions', 'eddcs_continue_shopping_settings', 999, 1 );
