@@ -4,13 +4,13 @@
  * Plugin URI: https://wordpress.org/plugins/easy-digital-downloads-continue-shopping/
  * Description: Adds a Continue Shopping link to the Easy Digital Downloads checkout cart.
  * Version: 1.0.3
- * Author: Sean Davis
- * Author URI: http://sdavismedia.com
+ * Author: Sandhills Development, LLC
+ * Author URI: https://sandhillsdev.com
  * Text Domain: edd-continue-shopping
  * Domain Path: /languages/
  *
  * @package         EDD\Continue Shopping
- * @author          Sean Davis
+ * @author          Sandhills Development, LLC
 */
 
 // Exit if accessed directly

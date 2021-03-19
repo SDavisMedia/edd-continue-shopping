@@ -1,9 +1,9 @@
 === Easy Digital Downloads - Continue Shopping ===
-Contributors: sdavis2702
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=52HQDSEUA542S
+Contributors: easydigitaldownloads, sdavis2702
+Donate link: https://easydigitaldownloads.com/donate/
 Tags: easy digital downloads, edd, shopping cart, checkout, ecommerce
 Requires at least: 3.9.2
-Tested up to: 4.6
+Tested up to: 5.7
 Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ Adds a Continue Shopping link to the Easy Digital Downloads checkout cart.
 
 Built for use with the Easy Digital Downloads plugin, this extension displays a Continue Shopping link in the checkout cart and allows you to specify what page users will be sent to when they click the link.
 
-Follow EDD Continue Shopping’s development on [Github](https://github.com/sdavismedia/edd-continue-shopping).
+Follow EDD Continue Shopping’s development on [Github](https://github.com/easydigitaldownloads/edd-continue-shopping).
 
 == Installation ==
 
