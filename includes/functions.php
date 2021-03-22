@@ -7,7 +7,7 @@
  */
 
 // Exit if accessed directly
-if( !defined( 'ABSPATH' ) ) exit;
+if( ! defined( 'ABSPATH' ) ) exit;
 
 
 /**
@@ -16,7 +16,7 @@ if( !defined( 'ABSPATH' ) ) exit;
  * @since       1.0.0
  */
 function eddcs_continue_shopping_link() {
-	if ( class_exists( 'Easy_Digital_Downloads' ) && !edd_get_option( 'edd_continue_shopping' ) ) {
+	if ( class_exists( 'Easy_Digital_Downloads' ) && ! edd_get_option( 'edd_continue_shopping' ) ) {
 		$store_page        = edd_get_option( 'edd_continue_shopping_page' );
 		$cs_text           = edd_get_option( 'edd_continue_shopping_text' );
 		$cs_link_type      = edd_get_option( 'edd_continue_shopping_link_type' );
@@ -38,8 +38,12 @@ function eddcs_continue_shopping_link() {
 		if ( empty( $store_link ) ) {
 			return;
 		}
+
+		$link_text = ! empty( $cs_text ) ? $cs_text : __( 'Continue Shopping', 'edd-continue-shopping' );
 		?>
-		<a href="<?php echo esc_url( $store_link ); ?>" class="edd-continue-shopping-button <?php echo 'text' == $cs_link_type ? '' : 'edd-submit button ' . $color; ?>" style="<?php echo 'text' == $cs_link_type ? 'font-size: inherit; font-weight: 400; margin-right: 4px;' : 'text-decoration: none;'; ?>"><?php if ( false === $cs_text ) { _e( 'Continue Shopping', 'edd-continue-shopping' ); } elseif ( !empty( $cs_text ) ) { echo $cs_text; } ?></a>
+		<a href="<?php echo esc_url( $store_link ); ?>" class="edd-continue-shopping-button <?php echo 'text' == $cs_link_type ? '' : 'edd-submit button ' . $color; ?>" style="<?php echo 'text' == $cs_link_type ? 'font-size: inherit; font-weight: 400; margin-right: 4px;' : 'text-decoration: none;'; ?>">
+			<?php echo esc_html( $link_text ); ?>
+		</a>
 		<?php
 	}
 }
