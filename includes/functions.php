@@ -16,7 +16,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
  * @since       1.0.0
  */
 function eddcs_continue_shopping_link() {
-	if ( ! edd_get_option( 'edd_continue_shopping' ) ) {
+	if ( edd_get_option( 'edd_continue_shopping' ) ) {
 		return;
 	}
 
@@ -48,4 +48,3 @@ function eddcs_continue_shopping_link() {
 	<?php
 }
 add_action( 'edd_cart_footer_buttons', 'eddcs_continue_shopping_link' );
-
