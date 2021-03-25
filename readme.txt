@@ -4,7 +4,7 @@ Donate link: https://easydigitaldownloads.com/donate/
 Tags: easy digital downloads, edd, shopping cart, checkout, ecommerce
 Requires at least: 3.9.2
 Tested up to: 5.7
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ Follow EDD Continue Shopping’s development on [Github](https://github.com/easy
 2. Cart Output
 
 == Changelog ==
+
+= 1.0.4 =
+* Fix: "Continue Shopping" URL is incorrect if the "Download" label has been customized.
+* Tweak: Update plugin author name and URI.
 
 = 1.0.3 =
 * update EDD settings with dedicated subsection
